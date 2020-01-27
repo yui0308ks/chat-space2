@@ -1,0 +1,40 @@
+$btn_color: #38aef0;
+
+.main_chat {
+  float: right;
+  &__group-info{
+    height: 100px;
+    width: calc(100vw - 300px);
+    background-color: #ffffff;
+    border-bottom-color: #eeeeee
+  }
+
+&__left-box1 {
+  padding-left: 40px;
+  font-size: 20px;
+  color: #333333;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+
+&__left-box2 {
+    font-size: 12px;
+    color: #999999;
+    padding-left: 40px;
+  }
+
+&__edit {
+  height: 40px;
+  color: $btn_color;
+  font-size: 16px;
+  text-decoration: none;
+  border: 1px solid $btn_color;
+  padding: 0 20px;
+  position:absolute;
+  top: 28px;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+}
