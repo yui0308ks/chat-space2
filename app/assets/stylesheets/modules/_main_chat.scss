@@ -37,4 +37,115 @@ $btn_color: #38aef0;
   justify-content: center;
   align-items: center;
   }
+
+&__message2-list {
+  height: calc(100vh - 190px);
+  width: calc(100vw - 300px);
+  background-color: #fafafa;
+  padding-left: 40px;
+  overflow: scroll;
 }
+
+&__message-up-info {
+  // height: 35px;
+  margin-top: 30px;
+  // p {float: left;}
+  margin-bottom: 10px;
+}
+
+&__up_user {
+  font-size: 16px;
+  color: #333333;
+  padding-top: 35px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: top;
+}
+
+&__up_data {
+  font-size: 12px;
+  color: #999999;
+  padding-top: 35px;
+  display: inline-block;
+}
+
+p {
+  font-size: 14px;
+  color: #434A54;
+  padding-top:12px;
+  margin-bottom: 11px;
+}
+
+.form {
+  height: 90px;
+  width: calc(100vw - 300px);
+  background-color: #d2d2d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.input-box__text {
+  height: 50px;
+  width: 100%;
+  border-style: none;
+  // padding-right: 150px;
+  margin-left: 40px;
+  padding-left: 10px;
+}
+
+.input-box__image__file {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 15px
+  
+}
+
+
+
+.input-box__image {
+  width:30px;
+
+
+}
+
+&__btn {
+  height: 50px;
+  width: 100px;
+  padding: 0 30px;
+  margin-right: 10px;
+  color: #ffffff;
+  float: right;
+  background-color: $btn_color;
+  border: 1px solid $btn_color;
+  display: block;
+  text-align: center;
+  margin-left: 10px;
+}
+
+&__send {
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  padding-right: 40px;
+  float: right;
+}
+
+label input {
+  display: none;
+}
+}
+
