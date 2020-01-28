@@ -8,11 +8,10 @@
       = link_to edit_user_path(current_user) do
         = icon('fas', 'cog', class: 'icon')
   .side_bar__group-list
-    - current_user.groups.each do |group|
+    - current_user.groups.includes(:messages).each do |group|
       .group
-        = link_to group_path(group) do
+        = link_to group_messages_path(group) do
           .group__name
             = group.name
           .group__message
-            -# = group.show_last_message
-            メッセージはまだありません。
+            = group.show_last_message
